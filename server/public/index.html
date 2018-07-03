@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/client.js"></script>
+</head>
+<body ng-app="foodApp">
+    <h1>Angular in 30 minutes</h1>
+    <div ng-controller="WelcomeController as vm">
+        <input type="text" ng-model="vm.intro">
+        <p>{{vm.intro}}</p>
+    
+    <div ng-repeat="food in vm.favFoods">
+        <p>{{food}}</p>
+    </div>
+</div>
+</body>
+</html
+>
